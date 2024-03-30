@@ -3,7 +3,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: ${TF_VAR_ENV_APP_KC_REALM_CERTS_URL}
+          issuer-uri: ${TF_VAR_ENV_APP_GL_RS_JWT_ISSUER_URL}
 
 server:
   port : ${TF_VAR_ENV_APP_BE_LOCAL_PORT}

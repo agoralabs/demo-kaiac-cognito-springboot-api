@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OAuth2ResourceServerController {
 
 	@GetMapping("/")
-	@PreAuthorize("hasAuthority('SCOPE_springbootapi/read')")
+	@PreAuthorize("hasAuthority('SCOPE_springbootapirs/read')")
 	public String index(@AuthenticationPrincipal Jwt jwt) {
 		return String.format("Hello, %s!", jwt.getClaimAsString("sub"));
 	}

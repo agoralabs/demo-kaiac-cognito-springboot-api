@@ -1,0 +1,8 @@
+{
+  "realm": "rcognito",
+  "auth-server-url": "https://keycloak-demo1-prod.skyscaledev.com",
+  "resource": "authz-servlet",
+  "credentials": {
+    "secret": "secret"
+  }
+}

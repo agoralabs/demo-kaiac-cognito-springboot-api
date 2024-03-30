@@ -1,0 +1,5 @@
+FROM $TF_VAR_ENV_APP_GL_DOCKER_REPOSITORY/openjdk:17-alpine
+
+COPY target/spring-rest-authz-resource-server-24.0.1.jar spring-rest-authz-resource-server-24.0.1.jar
+
+ENTRYPOINT ["java","-jar","/spring-rest-authz-resource-server-24.0.1.jar"]
